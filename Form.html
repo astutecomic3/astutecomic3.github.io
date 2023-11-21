@@ -6,9 +6,19 @@
   </head>
   <body>
     <form>
-      First Name: <input type = "text" /> <br />
-      Last Name: <input type = "text" /> <br />
-      Age: <input type = "number" min="0" /> <br />
+      <table>
+        <tr>
+          <td>
+            First Name: <input type = "text" /> <br />
+          </td>
+          <td>
+            Last Name: <input type = "text" /> <br />
+          </td>
+          <td>
+            Age: <input type = "number" min="0" /> <br />
+          </td>
+        </tr>
+      </table>  
       <p>
         What languages have you learned?
       </p>
@@ -40,27 +50,27 @@
         Which of these is your favorite?
       </p>
       <ul>
-      <li>
-      <label>
-      <input type="radiobox" name="languages" value="java" checked> Java       
-      </label>
-      </li>
-      <li>
-      <label>
-      <input type="radiobox" name="languages" value="python"> Python    
-      </label>
-      </li>
-      <li>
-      <label>
-      <input type="radiobox" name="languages" value="javascript"> Javascript
-      </label>
-      </li>
-      <li>
-      <label>
-      <input type="radiobox" name="languages" value="CSS"> CSS
-      </label>
-      </li>
-      </ul>           
+        <li>
+          <label>
+            <input type="radio" name="languages" value="java" checked> Java
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="languages" value="python"> Python
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="languages" value="javascript"> Javascript
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="languages" value="CSS"> CSS
+          </label>
+        </li>
+      </ul>
     </form>
   </body>
 </html>
