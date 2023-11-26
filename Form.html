@@ -6,7 +6,7 @@
   </head>
   <body>
     <center><h1>Programming Questionaire</h1></center>
-    <form onsubmit = "myFunction()">
+    <form onsubmit = "totalFunction()">
       <table>
         <tr>
           <td> First Name: </td> 
@@ -54,10 +54,18 @@
           <label><input type="radio" name="languages" value="CSS">CSS</label>
         </li>
       </ol>
+      <p> Buy my imaginary textbook! </p>
+      <input type = "number" min ="0" id= "quantity" />
       <input type = "submit" value = "Send" />
       <input type = "reset" />
     </form>
     <hr />
-    <script>function myFunction(){alert("Thank you, your form has been processed.");}</script>
+    <script>
+      function myFunction(){alert("Thank you, your form has been processed.");}
+      var Q1 = quantity;
+      var price = 100;
+      var sum = quantity * price;
+      function totalFunction(){alert("Your total is " + sum);} 
+    </script>
   </body>
 </html>
