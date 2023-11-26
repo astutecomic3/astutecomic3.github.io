@@ -62,7 +62,8 @@
     <hr />
     <script>
       function myFunction(){alert("Thank you, your form has been processed.");}
-      var Q1 = quantity;
+      var Q1 = 
+        document.getElementById("quantity").innerHTML;
       var price = 100;
       var sum = Q1 * price;
       function totalFunction(){alert("Your total is " + sum);} 
