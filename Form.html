@@ -6,7 +6,7 @@
   </head>
   <body>
     <center><h1>Programming Questionaire</h1></center>
-    <form onsubmit ="processForm()" />
+    <form onsubmit ="processForm()">
       <table>
         <tr>
           <td> First Name: </td> 
@@ -63,11 +63,11 @@
     </form>
     <hr />
     <script>
-
+   // Process Form Code
       function processForm() {
-        alert("Your form has been processed.") }
+        alert("Your form has been processed."); }
 
-      
+    // Book price Code
       const bookPrice = 100;
       function calculateTotalCost() {
         const quantityInput = 
@@ -76,6 +76,7 @@
           Number(quantityInput.value);
         const totalCost = bookPrice * quantity;
         alert("Total cost: $" + totalCost.toFixed(2));
+      }
     </script>
   </body>
 </html>
