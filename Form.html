@@ -6,7 +6,7 @@
   </head>
   <body>
     <center><h1>Programming Questionaire</h1></center>
-    <form onsubmit ="processForm()">
+    <form>
       <table>
         <tr>
           <td> First Name: </td> 
@@ -57,7 +57,7 @@
       <p> Buy my imaginary textbook! ($100) </p>
       <label for="quantity">Enter the quantity of books: </label>
       <input type = "number" min ="0" id= "quantity" />
-      <input type = "submit" value = "Submit form" />
+      <button onclick= "processForm()">Submit form</button>
       <button onclick="calculateTotalCost()">Calculate Total Cost</button>
       <input type = "reset" />
     </form>
