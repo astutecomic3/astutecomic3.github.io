@@ -55,7 +55,7 @@
         </li>
       </ol>
       <p> Buy my imaginary textbook! ($100) </p>
-      <p> Purchase more than 4 books and recieve 20% off your order! </p>
+      <p> Purchase more than 2 books and recieve 20% off your order! </p>
       <label for="quantity">Enter the quantity of books: </label>
       <input type = "number" min ="0" id= "quantity" />
       <button onclick= "processForm()">Submit form</button>
@@ -78,8 +78,9 @@
         const totalCost = bookPrice * quantity;
         const discount = totalCost * .2;
         const totalDiscount = totalCost - discount;
-        alert("Total cost: $" + totalDiscount.toFixed(2));
-        alert("Total cost: $" + totalCost.toFixed(2));
+       if(quantity > 2) { alert("Total cost: $" + totalDiscount.toFixed(2)); }
+       else { alert("Total cost: $" + totalCost.toFixed(2)); }
+}
     </script>
   </body>
 </html>
