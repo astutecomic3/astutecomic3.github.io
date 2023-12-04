@@ -1,0 +1,68 @@
+
+/* H1 style */
+
+h1 { font-family: Bangers, Georgia, serif; 
+           font-size: 100px; 
+           text-align: center;
+           color: Yellow;
+           text-shadow: 4px 4px 8px #000000;
+           letter-spacing: 6px;
+           top-margin: 50px;
+    }
+
+/* Body style */
+
+body { font-family: Viga;
+       color: Yellow;
+     }
+
+/* Paragraph style */
+
+p { font-size: 22px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    box-sizing: border-box;
+    }
+
+p#synop { width= 20px; }
+     
+
+/* H2 style */
+        
+h2 { font-size: 40px; 
+    text-align: center;
+    text-shadow: 4px 4px 8px #000000;
+    }
+ 
+/* Link style */
+a:visited {color: SpringGreen;}
+
+/* Nav style */
+
+ul { list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: MidnightBlue;
+    }
+li { float: left; }
+
+#navBar { display: block;
+          padding: 16px;
+          font-family: Bangers, Georgia, serif; 
+          font-size: 40px; 
+          text-align: center;
+          color: Yellow;
+          text-shadow: 4px 4px 8px #000000;
+          letter-spacing: 6px;
+          text-decoration: none;
+          border-style: solid;
+         }
+#navBar:hover { background-color: #111 }
+
+img { height: 55%;
+
+}
+
+
+
