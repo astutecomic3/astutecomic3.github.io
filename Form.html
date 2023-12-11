@@ -1,11 +1,22 @@
 <! Doctype html>
-<html>
+<html style="background-color:MediumBlue;">
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
+    <link href='myStyle.css' rel='stylesheet'>
     <meta charset = "utf-8">
     <title> Form Document </title>
   </head>
   <body>
-    <center><h1>Programming Questionaire</h1></center>
+    <center><h1>Feedback Form</h1></center>
+<ul>
+   <li><a href="index.html" id="navBar">Home</a></li>
+   <li><a href="about.html" id="navBar" target="_blank">About</a></li>
+   <li><a href="movie.html" id="navBar" target="_blank">Movies</a></li>
+   <li><a href="Form.html" id="navBar" target="_blank">Feedback</a></li>
+</ul>
+<br />
+    <h2>Any questions or feedback? Leave it down below!</h2>
     <form>
       <table>
         <tr>
@@ -17,49 +28,33 @@
           <td> <input type = "text" /> </td>
         </tr>
         <tr>
-          <td> Age: </td> 
-          <td> <input type = "number" min="0" /> </td>
-        </tr>
+        <td>Feedback: </td>
+        <td> <input type = "text" id= "feedback" /> </td>
       </table>  
-      <p>
-        What languages have you learned?
-      </p>
-      <ol>
-        <li style="list-style-type: none;">
-          <label> <input type = "checkbox" name="languages" value="java"> Java</label>
-        </li>
-        <li style="list-style-type: none;">
-        <label><input type= "checkbox" name="languages" value="python"> Python</label>
-        </li>
-        <li style="list-style-type: none;">
-        <label><input type="checkbox" name="languages" value="javascript"> Javascript</label>
-        </li>
-        <li style="list-style-type: none;">
-          <label><input type="checkbox" name="languages" value="CSS"> CSS</label>
-        </li>
-      </ol>
       <br />
-      <p> Which is your favorite? </p>
-      <ol>
+      <p> Which topic do you want more coverage on? </p>
+      <center><ol>
         <li style="list-style-type: none;">
-          <label><input type="radio" name="languages" value="java" checked>Java</label>
+          <label><input type="radio" name="topic" value="movies" checked>Movies</label>
         </li>
         <li style="list-style-type: none;">
-          <label><input type="radio" name="languages" value="python">Python</label>
+          <label><input type="radio" name="topic" value="TV">TV shows</label>
         </li>
         <li style="list-style-type: none;">
-          <label><input type="radio" name="languages" value="javascript">Javascript</label>
+          <label><input type="radio" name="topic" value="sports">Sports</label>
         </li>
         <li style="list-style-type: none;">
-          <label><input type="radio" name="languages" value="CSS">CSS</label>
+          <label><input type="radio" name="topic" value="other">Other</label>
         </li>
-      </ol>
-      <p> Buy my imaginary textbook! ($100) </p>
-      <p> Purchase more than 2 books and recieve 20% off your order! </p>
-      <label for="quantity">Enter the quantity of books: </label>
-      <input type = "number" min ="0" id= "quantity" />
+      </ol></center>
+      <br />
+      <p> Want a specific topic covered? <br />
+          I can do a individualized review for $25!</p>
+      <p><em>X-MAS SALE!</em> Buy a review today and get 20% off until the end of the year! </p>
+      <label for="quantity">Tell me a bit about what topic you want in detail: </label>
+      <input type = "text" />
       <button onclick= "processForm()">Submit form</button>
-      <button onclick="calculateTotalCost()">Calculate Total Cost</button>
+      <button onclick="calculateTotalCost()">Purchase review</button>
       <input type = "reset" />
     </form>
     <hr />
@@ -69,18 +64,11 @@
         alert("Your form has been processed."); }
 
     // Book price Code
-      const bookPrice = 100;
+      const bookPrice = 25;
       function calculateTotalCost() {
-        const quantityInput = 
-          document.getElementById('quantity');
-        const quantity =
-          Number(quantityInput.value);
-        const totalCost = bookPrice * quantity;
-        const discount = totalCost * .2;
-        const totalDiscount = totalCost - discount;
-       if(quantity > 2) { alert("Total cost: $" + totalDiscount.toFixed(2)); }
-       else { alert("Total cost: $" + totalCost.toFixed(2)); }
-}
+        var discount = bookPrice * .2;
+        var totalDiscount = bookPrice - discount;
+       alert("Thank you for you purchase! Your total is: $" + totalDiscount.toFixed(2)); }
     </script>
   </body>
 </html>
